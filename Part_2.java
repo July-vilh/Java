@@ -18,3 +18,23 @@ double weight = sc.nextDouble();
 float size = sc.nextFloat();
 boolean decision = sc.nextBoolean();
 
+Multiple Inputs
+You can use the same Scanner to take multiple inputs.
+
+For example, lets take the name and age as input and output them
+
+Scanner sc = new Scanner(System.in);
+String name = sc.nextLine();
+int age = sc.nextInt();
+System.out.println(name+": "+age);
+
+That's how you take input from the user in Java!
+
+Here are the steps:
+1. import the java.util.Scanner class.
+2. create a Scanner object:
+
+Scanner sc = new Scanner(System.in);
+
+3. Use the corresponding method of the Scanner to take input, for example:
+int num = sc.nextInt();
