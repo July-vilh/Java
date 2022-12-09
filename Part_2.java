@@ -99,3 +99,36 @@ if (age < 16) {
 
 Если age меньше 16 то Too Yong
 если больше 16 то Welcome
+
+int age = 25;
+if(age > 0) {
+  if(age > 16) {
+    System.out.println("Welcome!");
+  } else {
+    System.out.println("Too Young");
+  }
+} else {
+  System.out.println("Error");
+}
+
+else if Statements
+Instead of using nested if-else statements, you can use the else if statement to check multiple conditions.
+
+For example:
+
+int age = 25;
+
+if(age <= 0) {
+   System.out.println("Error");
+} else if(age <= 16) {
+   System.out.println("Too Young");
+} else if(age < 100) {
+   System.out.println("Welcome!");
+} else {
+   System.out.println("Really?");
+}
+
+0 или -5 Error
+14 или 16 Too Young
+25 Welcome
+101 и больше Really?
