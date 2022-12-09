@@ -38,3 +38,64 @@ Scanner sc = new Scanner(System.in);
 
 3. Use the corresponding method of the Scanner to take input, for example:
 int num = sc.nextInt();
+
+
+CONDITIONALS
+Conditional statements are used to perform different actions based on different conditions. 
+
+For example, a billing program can apply a discount to the total only if the amount is greater than a threshold. 
+
+Например, программа выставления счетов может применить скидку к общей сумме только в том случае, если сумма превышает пороговое значение.
+
+The if statement is one of the most frequently used conditional statements.
+If the if statements condition is true, the block of code inside the if statement is executed. 
+
+Syntax:
+if (condition) {
+  //some code 
+}
+
+Any of the following comparison operators may be used to form the condition:
+
+< less than
+
+> greater than
+
+!= not equal to
+
+== equal to
+
+<= less than or equal to
+
+>= greater than or equal to
+
+For example:
+
+int age = 24;
+if(age >= 18) {
+  System.out.println("Welcome");
+}
+
+Remember that you need to use two equal signs (==) to test for equality, since a single equal sign is the assignment operator.
+Помните, что вам нужно использовать два знака равенства (==) для проверки на равенство, поскольку один знак равенства является оператором присваивания.
+  
+int number = 8;
+if(number == 8) {
+  System.out.println("Bingo");
+}
+
+ELSE STATEMENT
+An if statement can be followed by an optional else statement, which executes when the condition evaluates to false.
+
+For example:
+
+int age = 30;
+
+if (age < 16) {
+  System.out.println("Too Young");
+} else {
+  System.out.println("Welcome!");
+}
+
+Если age меньше 16 то Too Yong
+если больше 16 то Welcome
