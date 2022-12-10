@@ -72,3 +72,49 @@ RESULT: 1
         8
         9
        10
+
+ 6. Some loops require to increase or decrease the value of a variable by a different number.
+
+For example, lets output only the even numbers from 0 to 10.
+
+int x = 0;
+while(x<=10) {
+  System.out.println(x);
+  x = x+2;
+}
+
+RESULT: 0
+        2
+        4
+        6
+        8
+       10
+ 
+Surprise! There is also a shorter way for x = x+2; It can be written as x+=2;
+Similarly, there are shorthand operators for other mathematical operations, such as -= for subtraction, *= for multiplication, etc.
+ 
+7. You can perform calculations and other operations in loops.
+
+For example, lets calculate the sum of the numbers from 1 to 100 and output it:
+
+int sum = 0;
+int num = 0;
+
+while(num <= 100) {
+  sum += num;
+  num++;
+}
+System.out.println(sum);
+
+RESULT: 5050
+ 
+We add the value of num to sum each time the loop runs, and then increase the num value by 1.
+
+At the end of the loop, sum holds the result of our calculation.
+ Notice that the last print statement is out of the while scope.
+
+We add the value of num to sum each time the loop runs, and then increase the num value by 1.
+
+At the end of the loop, sum holds the result of our calculation.
+
+Notice that the last print statement is out of the while scope.
