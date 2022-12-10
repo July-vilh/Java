@@ -24,3 +24,30 @@ if (age > 18 || height > 150) {
 }
 
 The code above will print Welcome! if age is greater than 18 or if height is greater than 150.
+
+3. NOT
+The NOT (!) logical operator is used to reverse the condition.
+If a condition is true, the NOT logical operator will make it false, and vice versa.
+
+Example:
+
+int age = 25;
+if(!(age > 18)) {
+  System.out.println("Too Young");
+} else {
+  System.out.println("Welcome");
+
+  !(age > 18) reads as "if age is NOT greater than 18".
+    
+4. Multiple Conditions
+You can chain multiple conditions using parentheses and the logical operators.
+
+For example:
+
+String country = "US";
+int age = 42;
+
+if((country == "US" || country == "GB") && (age > 0 && age < 100)) {
+  System.out.println("Allowed");
+}
+  
