@@ -59,4 +59,4 @@ A switch statement can have an optional default case.
 }
 
 RESULT: Another day
-
+No break is needed in the default case, as it is always the last statement in the switch.
