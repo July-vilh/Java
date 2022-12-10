@@ -33,3 +33,42 @@ while(x > 0) {
 
 The line x = x-1; is important, as without it the condition would never become false and the loop would run forever. 
 Each time the loop runs, 1 is subtracted from x.
+ 
+4. As it is common to decrease or increase a variable by 1 during loops, Java provides increment and decrement operators.
+
+These are a shorter way to increase or decrease the value of a variable by one.
+
+For example, the statement x=x-1; can be simplified to x--;
+
+while(x > 0) {
+  System.out.println(x);
+  x--;
+}
+
+RESULT: 3
+        2
+        1
+ 
+5. INCREMENTS
+
+Similarly, the increment operator ++ is used to increase the value of a variable by one.
+Here is a loop that outputs the numbers 1 to 10:
+
+int x = 1;
+
+while(x <= 10) {
+  System.out.println(x);
+  x++;
+}
+JAVA
+
+RESULT: 1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+       10
