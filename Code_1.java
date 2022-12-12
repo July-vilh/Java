@@ -111,4 +111,25 @@ public class Main {
     System.out.println(sum);
   }
 }
+______________________________
+5. The factorial of a number N is equal to 1 * 2 * 3 * ... * N. For example, the factorial of 5 is 1* 2 * 3 * 4 * 5  = 120.
+Use a for loop to make the calculation, and start the loop from the number 1. Create a program that takes a number from input and output the factorial of that number.
 
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    int number = scanner.nextInt();
+
+    int factorial = 1;
+
+    for (int i = 1; i <= number; i++) {
+      factorial *= i;
+    }
+
+    System.out.println(factorial);
+  }
+}
+______________________________
