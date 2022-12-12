@@ -43,3 +43,52 @@ The code above automatically creates an array containing 4 items, and stores the
   
 Sometimes you might see the square brackets placed after the array name, which also works, but the preferred way is 
 to place the brackets after the arrays data type.
+
+7. To use a loop, we first need to find out how many items the array stores. 
+For that, the array has a length property, which is accessed like this:
+
+int[] ages = {18, 33, 24, 64, 45};
+System.out.println(ages.length); 
+
+8. ow, when we know the number of items, we can use a for loop and output all the items of the array:
+
+int[] ages = {18, 33, 24, 64, 45};
+
+for(int x=0; x<ages.length; x++) {
+  System.out.println(ages[x]);
+}
+
+We used the x variable of the loop as the index for our array. During each iteration of the loop, the next item of the array is accessed.
+  
+9. We can also use a for loop to make calculations using array values. For example, lets calculate the sum of all values in an array:
+
+int[] ages = {18, 33, 24, 64, 45};
+int sum = 0;
+for(int x=0;x<ages.length;x++) {
+  sum += ages[x];
+  System.out.println(sum);
+}
+
+In the code above, we declared a variable sum to store the result and assigned it 0. 
+Then we used a for loop to iterate through the array, and added each items value to the variable.
+  
+10. Java provides another version of the for loop, called the for-each loop, to loop over arrays, making the code shorter and easier to read.
+Here it is:
+
+int[] nums = {2, 3, 5, 7};
+
+for (int x: nums) {
+  System.out.println(x);
+}
+
+The loop creates a variable, which automatically is assigned to each value of the array during the loop.
+You can call the variable anything you want: we called it x in our example.
+  
+11. Lets use a for-each loop to calculate the sum of all values of an array:
+
+int[] ages = {18, 33, 24, 64, 45};
+int sum = 0;
+for(int x: ages) {
+  sum += x;
+}
+System.out.println(sum);
