@@ -21,7 +21,7 @@ public class Main {
   }
 }
 
-__________
+___________________________________________
 2. You are making a robot that should categorize items by their color. Each color corresponds to a box with a specific number.
 For simplicity, our program will handle 3 colors:
 red goes to box #1
@@ -56,7 +56,7 @@ public class Main {
   }
 }
 
-_________________
+___________________________________________________________________
 3. Given the age of a person as an input, output their age group. Here are the age groups you need to handle:
 Child: 0 to 11
 Teen: 12 to 17
@@ -85,7 +85,7 @@ public class Main {
   }
 }
 
-________________________________
+____________________________________________________
 4. Your math teacher asked you to calculate the sum of the numbers 1 to N, where N is a given number.
 Task: Take an integer N from input and output the sum of the numbers 1 to N, inclusive.
 
