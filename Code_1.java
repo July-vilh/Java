@@ -234,3 +234,25 @@ public class Program {
 }
     }
 }
+__________
+10. 
+You need to make a method that converts a foot value to inches.
+1 foot has 12 inches. 
+Define a convert() method, that takes the foot value as its argument and outputs the inches value.
+The result must be a double.
+  
+  import java.util.Scanner;
+
+public class Program {
+    //your code goes here
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double num = sc.nextDouble(); 
+        convert(num);
+    }
+
+        static void convert(double num){
+            System.out.println(num * 12);
+    }
+}
