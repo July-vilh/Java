@@ -75,6 +75,82 @@ public class Main {
 // РЕЗУЛЬТАТ: 1
 _____________________________________________________________________________________
 
-== !=
-&& ||
+3) == и != (двойное равно/ СТРОГО РАВНО и НЕРАВНО)
+
+// 3.1. СТРОГО РАВНО
+    
+public class Main {
+    public static void main(String[] args) {
+        int number = 7;
+        int divide = 3;
+        boolean equals = number==divide;
+
+        System.out.println(equals);
+    }
+}
+
+// РЕЗУЛЬТАТ: false
+_____________
+
+public class Main {
+    public static void main(String[] args) {
+        int number = 3;
+        int divide = 3;
+        boolean equals = number==divide;
+
+        System.out.println(equals);
+    }
+}
+
+// РЕЗУЛЬТАТ: true
+_________________________________
+
+//3.2. НЕРАВНО (!=):
+
+public class Main {
+    public static void main(String[] args) {
+        int number = 3;
+        int divide = 3;
+        boolean equals = number!=divide;
+
+        System.out.println(equals);
+    }
+}
+
+// РЕЗУЛЬТАТ: false
+
+______________________________________________________________________________________________
+
+//4) ОПЕРАТОР AND (&&) и ОПЕРАТОР OR (||)
+    
+//4.1. OR (ИЛИ): тут мы платим зарплату при условии что хотя бы одно из условий истино
+
+public class Main {
+    public static void main(String[] args) {
+        boolean hasSalary = true;
+        boolean hasBonus = false;
+        boolean hasSomethingToPay = hasSalary || hasBonus;
+
+        System.out.println(hasSomethingToPay);
+    }
+}
+
+//РЕЗУЛЬТАТ: true
+
+___________
+
+// 4.2. AND (И): тут мы платип зп только если 2 условия истины (если хотя бы 1 из условий не истино то результат будет фолс и зп не будет оплачиваться):
+
+public class Main {
+    public static void main(String[] args) {
+        boolean hasSalary = true;
+        boolean hasBonus = false;
+        boolean hasSomethingToPay = hasSalary && hasBonus;
+
+        System.out.println(hasSomethingToPay);
+    }
+}
+
+//РЕЗУЛЬТАТ: false
+
 >< >= <=
