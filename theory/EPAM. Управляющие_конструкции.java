@@ -203,6 +203,109 @@ public class Main {
 // РЕЗУЛЬТАТ: 0, 9, 9, 7
 ________________________________________________________________________________
 
+5) break, continue, return
+  
+public class Main {
+    public static void main(String[] args) {
+        int [] array = {0, 9, 9, 7};
+
+        for (int i = 0; i <= 3; i++) {
+                System.out.println ("Cycle #" + i + "start");
+                System.out.println (array[i]);
+                System.out.println ("Cycle #" + i + "finish");
+
+        }
+    }
+}
+
+//РЕЗУЛЬТАТ:
+
+Cycle #0start
+0
+Cycle #0finish
+Cycle #1start
+9
+Cycle #1finish
+Cycle #2start
+9
+Cycle #2finish
+Cycle #3start
+7
+Cycle #3finish
+
+//________________
+//НО ЕСЛИ НАПРИМЕР Я НАШЛА УЖЕ 9 И НЕ ХОЧУ (НЕТ СМЫСЛА) ДВИГАТЬСЯ И ИСКАТЬ ДАЛЬШЕ (BREAK):
+
+!!!!!!!!!!!!!!!!! array [i] это число массива на котром я сейчас нахожусь !!!!!!!!!!!!!!!!
+
+public class Main {
+    public static void main(String[] args) {
+        int [] array = {0, 9, 9, 7};
+
+        for (int i = 0; i <= 3; i++) {
+                System.out.println ("Cycle #" + i + "start");
+                System.out.println (array[i]);
+                if (array[i] == 9) {
+                    System.out.println ("Found 9!");
+                    break;
+                }
+                System.out.println ("Cycle #" + i + "finish");
+        }
+    }
+}
+
+// РЕЗУЛЬТАТ: 
+
+Cycle #0start
+0
+Cycle #0finish
+Cycle #1start
+9
+Found 9!
+
+  
+!!!!!!!!!!!!!!!!!!!!! continue означает что мы проспускаем все что будет дальше в цикле и переходим на следующий круг!!!!!!!!!!!!!!!!!!!!
+  
+ТО ЕСТЬ:
+
+public class Main {
+    public static void main(String[] args) {
+        int [] array = {0, 9, 9, 7};
+
+        for (int i = 0; i <= 3; i++) {
+                System.out.println ("Cycle #" + i + "start");
+                System.out.println (array[i]);
+                if (array[i] == 9) {
+                    System.out.println ("Found 9!");
+                    continue;
+                }
+                System.out.println ("Cycle #" + i + "finish");
+        }
+    }
+}
+
+// ЕСЛИ ПОСМОТРЕТЬ РЕЗУЛЬТАТ, ТО:
+
+Cycle #0start
+0
+Cycle #0finish
+Cycle #1start
+9
+Found 9!
+Cycle #2start
+9
+Found 9!
+Cycle #3start
+7
+Cycle #3finish
+
+// !!!!!! ТУТ В РЕЗУЛЬТАТЕ ПОСЛЕ ПЕРВОЙ НАЙДЕННОЙ 9 НЕТ СЛОВО ОБ ОКОНЧАНИИ ЦИКЛА, Т.К. ПОСЛЕ НАХОЖДЕНИЯ НЕОБХОДИМОЙ ЦИФРЫ ЦИКЛ ПОВТОРЯЕТСЯ И ВСЕ ЧТО НИЖЕ СЛОВА CONTINUE УЖЕ НЕ КАТИРУЕТСЯ !!!!!!!!!!
+  
+
+_______________________________________________________________________________________________________________
+
+return более жестко прервет цикл ( и все что после цикла вовсе не будет больше отрабатываться даже то что уже не входит в этот цмкл и написано просто ниже)
+Поэтому для прерывания циклов лучше использовать break нежели return
 
 
 
